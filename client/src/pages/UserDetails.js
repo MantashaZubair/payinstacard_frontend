@@ -10,7 +10,7 @@ const UserDetails = () => {
     const handleDelete = async(id)=>{
       console.log(id)
       try {
-        const data = await axios.delete(`http://localhost:8000/api/v1/auth/delete-profile/${id}`,
+        const data = await axios.delete(`https://payinstacard-backend.onrender.com/api/v1/auth/delete-profile/${id}`,
         
         {  headers: {
             "Authorization": auth?.token
