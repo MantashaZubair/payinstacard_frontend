@@ -1,0 +1,96 @@
+/* .sidebar-container{
+    display: flex;
+    /* background-color: rgb(239, 232, 232); */
+
+/* }
+.sidebar{
+    background-color: white;
+    height: 100vh;
+    width: 180px;
+    border-right: 1px solid navy;
+    position: fixed;
+    overflow: scroll;
+}
+.home-container{
+    color: blue;
+    padding-left: 180px; 
+    width: 100%;
+    margin-top: 20px;
+} */ */
+
+.card-container{
+    height: 90vh;
+    overflow: scroll;
+   
+   }
+   .card-container .navbar{
+       background-color: #0a0a54;
+       padding: 20px ;
+       color: white;
+   }
+   .profile-pic{
+       width: 90px;
+       height: 90px;
+       border-radius: 50%;
+   }
+   .card-container-profile{
+           height: 70vh;
+          
+           
+   }
+   .card-container-profile .profile-header{
+       background-color: #0a0a54;
+       padding: 20px;
+
+       height: 140px;
+       color: white;
+       position: relative;
+   }
+    .card-profile{
+       position: absolute;
+       top:80px;
+       left:30px;
+       width: 95%;
+    height: 70%;
+       overflow: scroll;
+       padding: 20px;
+       background-color: white;
+   }
+
+   .userProfile{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.userinfo{
+    text-transform: capitalize;
+}
+.editbutton{
+    padding: 0px 20px;
+    height:39px;
+    border-radius: 6px;
+    background-color: rgb(66, 180, 66);
+    color: white;
+    border: none;
+}
+.deletebutton{
+    padding: 0px 20px;
+    height:39px;
+    margin-left: 10px;
+    border-radius: 6px;
+    background-color:red;
+    color: white;
+    border: none;
+}
+
+
+@media screen and (max-width: 700px){
+    .card-profile{    
+        left:10px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1000px) {
+    .card-profile{    
+        left:15px;
+    } 
+}
