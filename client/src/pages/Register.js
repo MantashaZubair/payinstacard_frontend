@@ -13,7 +13,7 @@ const Register = () => {
   const handleSubmit = async(e)=>{
     e.preventDefault()
   try {
-    const {data} = await axios.post(`http://localhost:8000/api/v1/auth/register`, {name,email,password,phone})
+    const {data} = await axios.post(`https://payinstacard-backend.onrender.com/api/v1/auth/register`, {name,email,password,phone})
     console.log(data)
     if(data.success){
       toast.success(data.message);
