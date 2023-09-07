@@ -23,7 +23,7 @@ const EditUserDetails = ({modelopened, setModelOpened}) => {
     e.preventDefault();
     try {
       const {data} = await axios.put(
-        `http://localhost:8000/api/v1/auth/update-profile`,
+        `https://payinstacard-backend.onrender.com/api/v1/auth/update-profile`,
         { name, email, phone},
         
         {  headers: {
