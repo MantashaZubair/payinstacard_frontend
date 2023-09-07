@@ -23,7 +23,7 @@ function App() {
      <Route path ="/" element={auth?.user ? <Navigate to="home" /> : <Navigate to="login" />}/>
      <Route path="/" element={<PrivateRoute />}>
           {/* Protected routes */}
-          <Route path="/home" element={auth?.user ? <Home user={auth.user} /> : <Navigate to="../login" />} />
+          <Route path="/home" element={auth?.user ? <Home user={auth?.user} /> : <Navigate to="../login" />} />
         </Route>
      <Route path ="/home" element={auth?.user ? <Home/>:<Navigate to="../login" />}/>
       <Route path ="/login" element={auth?.user ? <Navigate to="../home"/> :<Login/>}/>
