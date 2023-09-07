@@ -12,7 +12,7 @@ export default function PrivateRoute(){
     useEffect(()=>{
         const autocheck = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:8000/api/v1/auth/user`, {
+                const { data } = await axios.get(`https://payinstacard-backend.onrender.com/api/v1/auth/user`, {
                     headers: {
                         "Authorization": auth?.token
                     }
